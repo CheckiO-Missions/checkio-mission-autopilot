@@ -1,0 +1,40 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    一家大型电动汽车工厂正在改进其自动驾驶系统，需要您帮助实施一项程序，以决定行驶在两辆汽车 A 和 C 中间的汽车 B 是否需要加速、减速或保持当前速度。这三辆车是一样的，自动驾驶仪传感器将提供三辆车尾部在一个可以想象的轴上的当前位置。请参见图中示例。
+</p>
+
+<p style="text-align:center">
+    <img  title="example" src="{{MEDIA}}Captura de Tela 2023-05-12 às 09.49.12.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<p style="text-align: justify;">
+    如果 B 车尾到 A 车尾的距离小于 B 车尾到 C 车尾的距离，则需要加速。如果距离相同，则需要保持当前速度。 
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>三个整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>分别代表 A、B 和 C 三辆车后部的当前位置。
+</p>
+
+<p>
+   <strong>输出：</strong>如果汽车 B 需要加速，则整数为 1；如果需要减速，则整数为 -1 ；如果需要保持当前速度，则整数为 0。
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>示例</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>前提条件： A &lt; B &lt; C</strong>
+    <ul>
+    <li><i>A &lt; B &lt; C</i></li>
+    </ul>
+</p>
