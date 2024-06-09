@@ -1,0 +1,40 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    Ein großer Elektroautohersteller verbessert sein Autopilot-System und braucht Ihre Hilfe, um ein Programm zu implementieren, das entscheidet, ob Auto B, das in der Mitte von zwei Autos A und C fährt, beschleunigen, verlangsamen oder seine aktuelle Geschwindigkeit beibehalten muss. Die Autos sind identisch und die Autopilot-Sensoren liefern die aktuelle Position des Hecks der drei Autos auf einer denkbaren Achse. Sehen Sie sich ein Beispiel in der Abbildung an.
+</p>
+
+<p style="text-align:center">
+    <img  title="example" src="{{MEDIA}}Captura de Tela 2023-05-12 às 09.49.12.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<p style="text-align: justify;">
+    Auto B muss beschleunigt werden, wenn der Abstand zwischen seinem Heck und dem Heck von Auto A geringer ist als der Abstand zwischen seinem Heck und dem Heck von Auto C. Ist er größer, muss er abgebremst werden. Wenn er gleich ist, muss er seine aktuelle Geschwindigkeit beibehalten. 
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Drei Ganzzahlen <span>({% if is_js %}number{% else %}int{% endif %})</span>die jeweils die aktuellen Positionen der Rückseiten der Autos A, B und C darstellen.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Eine ganze Zahl 1, wenn Auto B beschleunigen muss; -1, wenn es abbremsen muss; oder 0, wenn es seine aktuelle Geschwindigkeit beibehalten muss.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Beispiele:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingungen:</strong>
+    <ul>
+    <li><i>A &lt; B &lt; C</i></li>
+    </ul>
+</p>
